@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./calendar.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="dateHead">
+    <button onclick="prev()">이전달</button>
+    <span id="year"></span>
+    <strong id="nowMonth">
+    </strong> <button onclick="next()">다음달</button>
+  </div>
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>일</th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+        <th>토</th>
+      </tr>
+    </thead>
+    <tbody id="table">
+    </tbody>
+  </table>
+
+  <script src="./calender.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+* {
+  font-family: NanumSquare;
+}
+
+#dateHead {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  position: relative;
+  height: 100px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+#dateHead>strong {
+  display: inline-block;
+  width: 120px;
+  font-size: 48px;
+  margin: 0 120px;
+  font-weight: normal;
+}
+
+#dateHead>#year {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#dateHead>button {
+  border: none;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#dateHead>button:active {
+  background-color: dodgerblue;
+}
+
+#nowMonth>.year {
+  font-size: 20px;
+}
+
+#myTable {
+  margin: 0 auto;
+  /* border-top: 2px solid black; */
+  border-collapse: collapse;
+}
+
+#myTable thead {
+  border-bottom: 2px solid #000;
+}
+
+
+#myTable thead th {
+  height: 40px;
+  line-height: 40px;
+}
+
+#myTable td {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 20px;
+  /* font-weight: bold; */
+  border: 1px solid #ccc;
+}
+
+#myTable td.endTd,
+#myTable td.startTd {
+  opacity: 0.2;
+}
+
+#myTable td:first-child {
+  color: red;
+}
+
+#myTable td:last-child {
+  /* color: blue; */
+}
